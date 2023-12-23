@@ -1,0 +1,482 @@
+#body{
+    background-color: rgb(200,200,200);
+}
+#LevelStroke{
+    width: 75%;
+    height: 30px;
+    border: 4px solid;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+#LevelBG{
+    width: 0%;
+    height: 100%;
+    border-radius: 0.35rem;
+    background-color: rgb(0, 200, 0);
+    z-index: 1;
+    position: absolute;
+}
+#xpLabel,#lvlLabel{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 170%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+}
+#ttlXpLabel{
+    position: absolute;
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    font-size: 170%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    top: 60px;
+}
+#lvlXpLabel {
+    position: absolute;
+    top: 50%; /* Adjust this value to vertically center the label */
+    left: 50%; /* Adjust this value to horizontally center the label */
+    transform: translate(-50%, -50%); /* Center the label precisely */
+    font-size: 170%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    z-index: 2;
+}
+#Upg1Div{
+    position: absolute;
+    top: 90px;
+    left: 10px;
+    transform: translate(0%, 0%);
+    width: 265px;
+    height: 170px;
+    font-size: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    z-index: 2;
+    background-color: rgb(77, 77, 77);
+    border: 7px solid;
+    border-radius: 7px;
+}
+#PrestigeDiv{
+    position: absolute;
+    top: 300px;
+    left: 10px;
+    transform: translate(0%, 10%);
+    width: 265px;
+    height: 170px;
+    font-size: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    z-index: 2;
+    background-color: rgb(0,255,255);
+    border: 7px solid;
+    border-radius: 7px;
+}
+#LeavesDiv{
+    display: none;
+    position: absolute;
+    top: 530px;
+    left: 10px;
+    transform: translate(0%, 10%);
+    width: 265px;
+    height: 170px;
+    font-size: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    z-index: 2;
+    background-color: rgb(0,155,0);
+    border: 7px solid;
+    border-radius: 7px;
+}
+#FireDiv{
+    display: none;
+    position: absolute;
+    top: 71px;
+    left: 320px;
+    transform: translate(0%, 10%);
+    width: 265px;
+    height: 170px;
+    font-size: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    z-index: 2;
+    background-color: rgb(255,100,0);
+    border: 7px solid;
+    border-radius: 7px;
+}
+#EnergyDiv{
+    display: none;
+    position: absolute;
+    top: 360px;
+    left: 320px;
+    transform: translate(0%, 10%);
+    width: 265px;
+    height: 170px;
+    font-size: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    z-index: 2;
+    background-color: rgb(255,255,0);
+    border: 7px solid;
+    border-radius: 7px;
+}
+#SilverDiv{
+    display: none;
+    position: absolute;
+    top: 628px;
+    left: 320px;
+    transform: translate(0%, 10%);
+    width: 265px;
+    height: 170px;
+    font-size: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    z-index: 2;
+    background-color: rgb(100,100,100);
+    border: 7px solid;
+    border-radius: 7px;
+}
+#LavaDiv{
+    display: none;
+    position: absolute;
+    top: 71px;
+    left: 630px;
+    transform: translate(0%, 10%);
+    width: 265px;
+    height: 170px;
+    font-size: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    z-index: 2;
+    background-color: rgb(255,0,0);
+    border: 7px solid;
+    border-radius: 7px;
+}
+#LightDiv{
+    display: none;
+    position: absolute;
+    top: 358px;
+    left: 630px;
+    transform: translate(0%, 10%);
+    width: 265px;
+    height: 170px;
+    font-size: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    z-index: 2;
+    background-color: rgb(255,255,255);
+    border: 7px solid;
+    border-radius: 7px;
+}
+#DarkDiv{
+    display: none;
+    position: absolute;
+    top: 626px;
+    left: 630px;
+    transform: translate(0%, 10%);
+    width: 265px;
+    height: 170px;
+    font-size: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    z-index: 2;
+    background-color: rgb(70,70,70);
+    border: 7px solid;
+    border-radius: 7px;
+}
+#DucksDiv{
+    display: none;
+    position: absolute;
+    top: 71px;
+    left: 940px;
+    transform: translate(0%, 10%);
+    width: 265px;
+    height: 170px;
+    font-size: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    z-index: 2;
+    background-color: rgb(255,255,0);
+    border: 7px solid;
+    border-radius: 7px;
+}
+#Upg1Title,#PresTitle,#LeavesTitle,#FireTitle,#EnergyTitle,#SilverTitle,#LavaTitle,#LightTitle,#DarkTitle,#DucksTitle{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100px;
+    font-size: 300%;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    z-index: 2;
+}
+#Upg1Cost{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 40px;
+    font-size: 120%;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    z-index: 2;
+}
+#PresAmt,#LeavesAmt,#FireAmt,#EnergyAmt,#SilverAmt,#LavaAmt,#LightAmt,#DarkAmt,#DucksAmt{
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 40px;
+    font-size: 110%;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    z-index: 2;
+}
+#Upg1Level{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 40px;
+    font-size: 200%;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    z-index: 2;
+}
+#PresDesc,#LeavesDesc,#FireDesc,#EnergyDesc,#SilverDesc,#LavaDesc,#LightDesc,#DarkDesc,#DucksDesc{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 40px;
+    font-size: 100%;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    z-index: 2;
+}
+#PresBoostLabel{
+    position: absolute;
+    top: 500px;
+    left: 160px;
+    transform: translate(-55%, -0%);
+    width: 265px;
+    height: 10px;
+    font-size: 20px;
+    text-align:left;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    z-index: 2;
+    text-shadow: 0px 0px 5px aqua,0px 0px 5px aqua;
+}
+#LeavesBoostLabel{
+    display: none;
+    position: absolute;
+    top: 730px;
+    left: 160px;
+    transform: translate(-55%, -0%);
+    width: 265px;
+    height: 10px;
+    font-size: 20px;
+    text-align:left;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    z-index: 2;
+    text-shadow: 0px 0px 7px rgb(0, 255, 0),0px 0px 7px rgb(0, 255, 0),0px 0px 7px rgb(0, 255, 0);
+}
+#FireBoostLabel{
+    display: none;
+    position: absolute;
+    top: 272px;
+    left: 465px;
+    transform: translate(-55%, -0%);
+    width: 265px;
+    height: 10px;
+    font-size: 19px;
+    text-align:left;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    z-index: 2;
+    text-shadow: 0px 0px 7px rgb(255, 100, 0),0px 0px 7px rgb(255, 100, 0),0px 0px 7px rgb(255, 100, 0);
+}
+#EnergyBoostLabel{
+    display: none;
+    position: absolute;
+    top: 560px;
+    left: 465px;
+    transform: translate(-55%, -0%);
+    width: 265px;
+    height: 10px;
+    font-size: 19px;
+    text-align:left;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    z-index: 2;
+    text-shadow: 0px 0px 10px rgb(255, 255, 0),0px 0px 10px rgb(255, 255, 0),0px 0px 10px rgb(255, 255, 0),0px 0px 10px rgb(255, 255, 0);
+}
+#SilverBoostLabel{
+    display: none;
+    position: absolute;
+    top: 830px;
+    left: 465px;
+    transform: translate(-55%, -0%);
+    width: 265px;
+    height: 10px;
+    font-size: 19px;
+    text-align:left;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    z-index: 2;
+    text-shadow: 0px 0px 10px rgb(100,100,100),0px 0px 10px rgb(100,100,100),0px 0px 10px rgb(100,100,100);
+}
+#LavaBoostLabel{   
+    display: none;
+    position: absolute;
+    top: 271px;
+    left: 775px;
+    transform: translate(-55%, -0%);
+    width: 265px;
+    height: 10px;
+    font-size: 19px;
+    text-align:left;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    z-index: 2;
+    text-shadow: 0px 0px 10px rgb(255,0,0),0px 0px 10px rgb(255,0,0),0px 0px 10px rgb(255,0,0);
+}
+#LightBoostLabel{
+    display: none;
+    position: absolute;
+    top: 560px;
+    left: 775px;
+    transform: translate(-55%, -0%);
+    width: 265px;
+    height: 10px;
+    font-size: 19px;
+    text-align:left;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    z-index: 2;
+    text-shadow: 0px 0px 10px rgb(255,255,255),0px 0px 10px rgb(255,255,255),0px 0px 10px rgb(255,255,255);
+}
+#DarkBoostLabel{
+    display: none;
+    position: absolute;
+    top: 828px;
+    left: 775px;
+    transform: translate(-55%, -0%);
+    width: 265px;
+    height: 10px;
+    font-size: 19px;
+    text-align:left;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    z-index: 2;
+    text-shadow: 0px 0px 10px rgb(0,0,0),0px 0px 10px rgb(0,0,0),0px 0px 10px rgb(0,0,0);
+}
+#DucksBoostLabel{
+    display: none;
+    position: absolute;
+    top: 271px;
+    left: 1085px;
+    transform: translate(-55%, -0%);
+    width: 265px;
+    height: 10px;
+    font-size: 19px;
+    text-align:left;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    z-index: 2;
+    text-shadow: 0px 0px 10px rgb(255,255,0),0px 0px 10px rgb(255,255,0),0px 0px 10px rgb(255,255,0);
+}
+#Upg1BoostLabel{
+    position: absolute;
+    top: 275px;
+    left: 160px;
+    transform: translate(-55%, -0%);
+    width: 265px;
+    height: 10px;
+    font-size: 18px;
+    text-align:left;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    z-index: 2;
+    text-shadow: 0px 0px 7px rgb(100,100,100),0px 0px 7px rgb(100,100,100)
+}
+#BuyUpg1{
+    position: absolute;
+    top: 80%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 40px;
+    font-size: 150%;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    z-index: 2;
+    background-color: greenyellow;
+    border: 3px solid;
+    border-radius: 3px;
+}
+#BuyMaxUpg1{
+    position: absolute;
+    top: 80%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 40px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    font-size:100%;
+    z-index: 2;
+    background-color: greenyellow;
+    border: 3px solid;
+    border-radius: 3px;
+}
+#BuyMaxUpg1:hover,#BuyUpg1:hover{
+    background-color: rgb(200,255,0);
+    width: 43%;
+    height: 43px;
+    cursor: pointer;
+}
+#PresButton:hover,#LeavesButton:hover,#FireButton:hover,#EnergyButton:hover,#SilverButton:hover,#LavaButton:hover,#LightButton:hover,#DarkButton:hover,#DucksButton{
+    background-color: rgb(200,255,0);
+    width: 83%;
+    height: 43px;
+    left: 24%;
+    cursor: pointer;
+}
+#PresButton,#LeavesButton,#FireButton,#EnergyButton,#SilverButton,#LavaButton,#LightButton,#DarkButton,#DucksButton{
+    position: absolute;
+    top: 80%;
+    left: 25%;
+    transform: translate(-20%, -50%);
+    width: 80%;
+    height: 40px;
+    font-size: 100%;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    z-index: 2;
+    background-color: greenyellow;
+    border: 3px solid;
+    border-radius: 3px;
+}

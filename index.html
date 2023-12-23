@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id ="body">
+    <div id = "LevelStroke">
+        <div id = "LevelBG"></div>
+        <label id = "lvlXpLabel">10XP</label>
+    </div>
+    <label id = "lvlLabel">Level: 1</label>
+    <label id = "ttlXpLabel">0 Total XP</label>
+    <div id = "Upg1Div">
+        <label id = "Upg1Title">x1.2 XP</label>
+        <label id = "Upg1Cost">Cost: 20 XP</label>
+        <label id = "Upg1Level">Level 0</label>
+        <button id = "BuyUpg1" onclick="Upgrade('Upg1','XP',false,true,new Decimal(1.75),new Decimal(20),'Upg1Cost')">Buy 1</button>
+        <button id = "BuyMaxUpg1" onclick="Upgrade('Upg1','XP',true,true,new Decimal(1.75),new Decimal(20),'Upg1Cost')">Buy 1</button>
+    </div>
+    <label id = "Upg1BoostLabel">this upgrade is boosting XP by x1</label>
+    <div id = "PrestigeDiv">
+        <label id = "PresTitle">Prestige</label>
+        <label id = "PresDesc">Resets the upgrade above and XP</label>
+        <label id = "PresAmt">You have 0 PPts</label>
+        <button id = "PresButton" onclick="Prestige()">Level 10 Required</button>
+    </div>
+    <label id = "PresBoostLabel">PPts are boosting XP by x1</label>
+    <div id = "LeavesDiv">
+        <label id = "LeavesTitle">Leaves</label>
+        <label id = "LeavesDesc">Resets everything prestige does as well as prestige content</label>
+        <label id = "LeavesAmt">You have 0 leaves</label>
+        <button id = "LeavesButton" onclick="Leaves()">1000 PPts Required</button>
+    </div>
+    <label id = "LeavesBoostLabel">leaves are boosting XP by x1</label>
+    <div id = "FireDiv">
+        <label id = "FireTitle">Fire</label>
+        <label id = "FireDesc">Resets everything leaves do as well as leaf content</label>
+        <label id = "FireAmt">You have 0 Fire</label>
+        <button id = "FireButton" onclick="FirePres()">250 Leaves Required</button>
+    </div>
+    <label id = "FireBoostLabel">Fire is boosting PPts by x1 and XP by x1 and is autobuying the first upgrade</label>
+    <div id = "EnergyDiv">
+        <label id = "EnergyTitle">Energy</label>
+        <label id = "EnergyDesc">Resets everything fire does as well as Fire content</label>
+        <label id = "EnergyAmt">You have 0 Energy</label>
+        <button id = "EnergyButton" onclick="Energize()">2.5M Fire Required</button>
+    </div>
+    <label id = "EnergyBoostLabel">Energy is boosting PPts by x1 and Leaves by x1 and is automating PPts</label>
+    <div id = "SilverDiv">
+        <label id = "SilverTitle">Silver</label>
+        <label id = "SilverDesc">Resets everything energy does as well as Energy content</label>
+        <label id = "SilverAmt">You have 0 Silver</label>
+        <button id = "SilverButton" onclick="Silverize()">10000 Energy Required</button>
+    </div>
+    <label id = "SilverBoostLabel">Silver is boosting XP by x1 and Fire by x1 and is automating Leaves</label>
+    <div id = "LavaDiv">
+        <label id = "LavaTitle">Lava</label>
+        <label id = "LavaDesc">Resets everything silver does as well as Silver content</label>
+        <label id = "LavaAmt">You have 0 Lava</label>
+        <button id = "LavaButton" onclick="LavaPrestige()">1000 Silver Required</button>
+    </div>
+    <label id = "LavaBoostLabel">Lava is boosting PPts by x1 and Energy by x1 and is automating Fire</label>
+    <div id = "LightDiv">
+        <label id = "LightTitle">Light</label>
+        <label id = "LightDesc">Resets everything lava does as well as Lava content</label>
+        <label id = "LightAmt">You have 0 Light</label>
+        <button id = "LightButton" onclick="LightPrestige()">100 Lava Required</button>
+    </div>
+    <label id = "LightBoostLabel">Light is boosting XP by x1 and Darkness by x1 and is automating Energy</label>
+    <div id = "DarkDiv">
+        <label id = "DarkTitle">Darkness</label>
+        <label id = "DarkDesc">Resets everything lava does as well as Lava content</label>
+        <label id = "DarkAmt">You have 0 Darkness</label>
+        <button id = "DarkButton" onclick="DarkPrestige()">100 Lava Required</button>
+    </div>
+    <label id = "DarkBoostLabel">Darkness is boosting XP by x1 and Light by x1</label>
+    <div id = "DucksDiv">
+        <label id = "DucksTitle">Ducks</label>
+        <label id = "DucksDesc">Resets everything light does as well as light and darkness content</label>
+        <label id = "DucksAmt">You have 0 Ducks</label>
+        <button id = "DucksButton" onclick="DuckPrestige()">5000 Light and Darkness Required</button>
+    </div>
+    <label id = "DucksBoostLabel">Ducks are boosting XP by x1 and Light by x1</label>
+    <script src="break_eternity.js-master/break_eternity.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
